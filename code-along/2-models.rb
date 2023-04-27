@@ -14,9 +14,30 @@ Company.destroy_all
 # 1a. check out the schema file
 # 1b. check out the model file
 
+puts "There are #{Company.all.count} companies"
+
 # 2. insert new rows in companies table
+new_company = Company.new
+# puts new_company.inspect
+
+new_company{"name"} = "Apple"
+new_company{"city"} = "Cupertino"
+new_company{"state"} = "CA"
+new_company{"url"} = "apple.com"
+new_company.save
+
+company2 = Company.new
+company2{"name"} = "Amazon"
+company2{"city"} = "Seattle"
+company2{"state"} = "WA"
+company2{"url"} = "amazon.com"
+company2.save
+
+puts "There are #{Company.all.count} companies"
+
 
 # 3. query companies table to find all row with California company
+
 
 # 4. query companies table to find single row for Apple
 

@@ -16,7 +16,7 @@
 #   and Contact).  Follow the steps below for Salesperson, and then repeat
 #   for Activity.
 
-# 1. in terminal, generate a model and table for ______
+# 1. in terminal, generate a model and table for Salesperson
 # rails generate model _____
 
 # 2. open newly generated files
